@@ -1,0 +1,39 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+html{
+    color-scheme: light dark;
+}
+
+body{
+    background-color: rgb(141, 140, 140);
+}
+
+nav{
+    background-color: black;
+    padding: 1em;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+.col{
+    min-width: 200px;
+    min-height: 200px;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    flex-grow: 1;
+    background-color: black;
+}
